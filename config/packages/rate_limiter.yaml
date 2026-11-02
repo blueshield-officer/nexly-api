@@ -1,0 +1,10 @@
+framework:
+    rate_limiter:
+        feedback_bug:
+            policy: 'fixed_window'
+            limit: 1
+            interval: '3 hours'
+        feedback_idea:
+            policy: 'fixed_window'
+            limit: 1
+            interval: '1 day'

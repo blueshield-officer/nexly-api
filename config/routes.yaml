@@ -1,0 +1,100 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+# ========== General API ==========
+api_controllers:
+    resource:
+        path: ../src/Controller/Api
+        namespace: App\Controller\Api
+    type: attribute
+    prefix: '/api'
+
+# ========== Auth ==========
+api_auth_controllers:
+    resource:
+        path: ../src/Controller/Api/Auth
+        namespace: App\Controller\Api\Auth
+    type: attribute
+    prefix: '/api/auth'
+
+
+
+# ========== School ==========
+api_school_controllers:
+    resource:
+        path: ../src/Controller/Api/School
+        namespace: App\Controller\Api\School
+    type: attribute
+    prefix: '/api/schools'
+
+# ========== District ==========
+api_district_controllers:
+    resource:
+        path: ../src/Controller/Api/District
+        namespace: App\Controller\Api\District
+    type: attribute
+    prefix: '/api/districts'
+
+# ========== Invite ==========
+api_invite_controllers:
+    resource:
+        path: ../src/Controller/Api/Invite
+        namespace: App\Controller\Api\Invite
+    type: attribute
+    prefix: '/api/invites'
+
+# ========== External ==========
+api_external_controllers:
+    resource:
+        path: ../src/Controller/Api/External
+        namespace: App\Controller\Api\External
+    type: attribute
+    prefix: '/api/external'
+
+# ========== Request ==========
+api_request_controllers:
+    resource:
+        path: ../src/Controller/Api/Request
+        namespace: App\Controller\Api\Request
+    type: attribute
+    prefix: '/api/request'
+
+
+
+
+
+
+
+
+# ========== User ==========
+api_user_controllers:
+    resource:
+        path: ../src/Controller/Api/User
+        namespace: App\Controller\Api\User
+    type: attribute
+    prefix: '/api/user'
+
+api_admin_school_controller:
+    resource:
+        path: ../src/Controller/Api/Admin/School
+        namespace: App\Controller\Api\Admin\School
+    type: attribute
+    prefix: '/api/admin/schools'
+
+api_admin_district_controller:
+    resource:
+        path: ../src/Controller/Api/Admin/District
+        namespace: App\Controller\Api\Admin\District
+    type: attribute
+    prefix: '/api/admin/districts'
+
+
+
+
+
+
+#app_metrics:
+#    resource: '@ArtprimaPrometheusMetricsBundle/Resources/config/routing.yaml'

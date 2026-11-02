@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Dto\Request;
+
+use Symfony\Component\Validator\Constraints as Assert;
+class SchoolDayCyclePatchRequest
+{
+    #[Assert\Length(max: 5)]
+    public ?string $code;
+
+    public ?int $position;
+}
